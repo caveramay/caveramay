@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+  <style>
+
+.form {
+float:left;
+}
+
+h3{
+  font-size:40px;
+  text-align:center;
+}
+
+div.gallery {
+  margin: 10px;
+  border: 3px solid #ccc;
+  float: right;
+  width: 300px
+}
+
+div.gallery:hover {
+  border: 2px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  float:center;
+  text-indent:5%;
+}
+
+div.desc {
+  padding: 2px;
+  text-align: center;
+  font-size:60%;
+}
+form  {
+font-size:20px;
+
+}
+input, form label{
+  width:70px;
+  float:top ;
+}
+input {
+
+  font-size:9px;
+}
+
+label {
+color:black;
+}
+p{
+color:black;
+}
+.carousel-inner{
+float:center;
+}
+body{
+  background:lightblue;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 100px;
+  cursor: pointer;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/fundoestrela1.png" alt="Los Angeles" class="d-block" width="1250" height="500">
+      <div class="carousel-caption">
+        <h3 style="color:blue "; >Phones Gamers</h3>
+        <p style="color:white";>O melhores fones para você que ultrapassa Limites!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/fundoestrela.png" alt="Chicago" class="d-block" width="1200" height="500">
+      <div class="carousel-caption">
+        <h3 style="color:red";>Phone style</h3>
+        <p style="color:white";>O melhor para você jogar com alta qualidade de som!</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="img/fundoestrela3.png" alt="New York" class="d-block" width="1250" height="500">
+      <div class="carousel-caption">
+        <h3>Bluetooth 5.0</h3>
+        <p style="color:blue";>Fones De Ouvido Bluetooth 5.0 sem fio fones de ouvido à prova d 'água Para Iphone</p>
+      </div>  
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container-fluid mt-3">
+</div>
+
+<div class="form">
+</form>
+
+<p style="font-size:10px;"><strong>Escolha por categoria</strong></p>
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">Lazer</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> Diversão</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3">Estudos</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2">Casa</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3">Trabalho</label><br>
+<input type="submit" value="Salvar">
+</form>  
+</form>
+
+<p style="font-size:10px;"><strong>Escolha por Marcas</strong></p>
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">Xiaomi</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> Sony</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3">Multilaser</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2">Philips</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3">JBL</label><br>
+
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3">Aple</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3">AKG</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3">ALTOMEX</label><br>
+
+<input type="submit" value="Salvar">
+</form>  
+
+
+
+<p style="font-size:10px;"><strong>Escolha as características para seu fone de ouvido</strong></p>
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">wi-fi</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> bluetooth</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3">com / sem fio</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3">Prova de Água</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3">cartão de Memória</label><br>
+  <input type="submit" value="Salvar">
+</form> 
+
+<p style="font-size:10px;"><strong>Escolha os preços para seu fone de ouvido</strong></p>
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1">R$ 20,59</label><br>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">R$ 80,69</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> R$ 110,69</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3">R$ 180,69</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3">R$ 329,45</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3">R$ 620,29</label><br>
+  <input type="submit" value="Salvar">
+</form> 
+
+<p style="font-size:10px;"><strong>escolha sua cor favorita </strong></p>
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1">Vermelho</label><br>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">Azul</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> Amarelo</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3">Prata</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3">Cinza</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3">Rosa</label><br>
+  <input type="submit" value="Salvar">
+</form> 
+
+
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela1.png">
+    <img src="img\fonesestrela1.png" alt="Cinque Terre" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela2.png">
+    <img src="img\fonesestrela2.png" alt="Forest" width="400" height="200">
+  </a>
+  <div class="desc">
+    <a href="dadosfretes.html" class="button">Comprar</a>
+  </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela3.png">
+    <img src="img\fonesestrela3.png" alt="Northern Lights" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela4.png">
+    <img src="img\fonesestrela4.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela5.png">
+    <img src="img\fonesestrela5.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela6.png">
+    <img src="img\fonesestrela6.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela7.png">
+    <img src="img\fonesestrela7.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela8.png">
+    <img src="img\fonesestrela8.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela9.png">
+    <img src="img\fonesestrela9.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela10.png">
+    <img src="img\fonesestrela10.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela11.png">
+    <img src="img\fonesestrela11.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela12.png">
+    <img src="img\fonesestrela12.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela13.png">
+    <img src="img\fonesestrela13.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela14.png">
+    <img src="img\fonesestrela14.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela15.png">
+    <img src="img\fonesestrela15.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela16.png">
+    <img src="img\fonesestrela16.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela17.png">
+    <img src="img\fonesestrela17.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela18.png">
+    <img src="img\fonesestrela18.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela19.png">
+    <img src="img\fonesestrela19.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela20.png">
+    <img src="img\fonesestrela20.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela21.png">
+    <img src="img\fonesestrela21.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela22.png">
+    <img src="img\fonesestrela22.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela23.png">
+    <img src="img\fonesestrela23.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela24.png">
+    <img src="img\fonesestrela24.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela25.png">
+    <img src="img\fonesestrela25.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela26.png">
+    <img src="img\fonesestrela26.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela27.png">
+    <img src="img\fonesestrela27.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela28.png">
+    <img src="img\fonesestrela28.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela29.png">
+    <img src="img\fonesestrela29.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela29.png">
+    <img src="img\fonesestrela29.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img\fonesestrela30.png">
+    <img src="img\fonesestrela30.png" alt="Mountains" width="400" height="200">
+  </a>
+  <div class="desc"></div>
+  <a href="dadosfretes.html" class="button">Comprar</a>
+</div>
+<a href="fones.html">Voltar para o topo></a>
+</body>
+</html>
+
+
